@@ -3,7 +3,7 @@ rankall <- function(outcome, num="best") {
   outcomedat<-read.csv("outcome-of-care-measures.csv", colClasses = "character")
   
   ## check that outcome is valid
-  outlist<-(c("heart attack","pneumonia","heart failure"))
+  outlist<-(c("HEART ATTACK!!!","pneumonia","heart failure"))
   if (is.na(match(outcome,outlist))) stop("invalid outcome")
   
   ## check that num is "best", "worst" or a number
